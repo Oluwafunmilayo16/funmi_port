@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,10 +10,10 @@
     <style></style>
     <script src=""></script>
 </head>
+
 <body>
 
     <nav class="container">
-
         <div class="topnav">
 
             <h1 class="logo">HILEAD</h1>
@@ -21,92 +22,197 @@
 
                 <a class="active" href="home">Home</a>
 
-                <a class="active" href="about">About</a>
+                <a class="active" href="about">About me</a>
 
-                <a class="active" href="skills">Skills</a>
+                <a class="active" href="skills">Portfolio</a>
 
-                <a class="active" href="projects">Projects</a>
+                <a class="active" href="faq">FAQ</a>
 
-                <a class="active" href="resume">Resume</a>
-
-                <button class="hire">Hire Me</button>
+                <button class="hire">Contact &rarr; </button>
             </div>
 
-        </div>
-        
-    
-    
-        <!-- <div class="intro">
+            <button class="hamburger" onclick="toggleMenu()">
+                <img src="./assets/menu.svg" width="40" />
+            </button>
 
-            <div class="simple">
-                <h1>Welcome! I am Oluwafunmilayo Oluyemi</h1>
-                <p>
-            </div>
+            <div id="sidemenu">
+                <button class="close" onclick="toggleMenu()">
+                    <img src="./assets/close.svg" />
+                </button>
 
-            <div class="me">
-                <img src="./funmi2.png" alt="" style="width: 100%; height:400px">
-            </div>
+                <div class="sidelinks">
+                    <a class="active" href="home">Home</a>
 
-        </div>
+                    <a class="active" href="about">About me</a>
 
+                    <a class="active" href="skills">Portfolio</a>
 
-        <h1 class="moi">About Me</h1>
-        <p class="etmoi">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
-        <hr width="150px" color="blueviolet"> -->
+                    <a class="active" href="faq">FAQ</a>
 
-        <div class="intro">
-
-            <div class="moi">
-                <h1>HEY! I'm <span class="name">Oluwafunmilayo,<br>Software Engineer</span></h1>
-                <p>Here, you'll get to know about me and what I do. <br>Sure you'll be pleased with what you see, dive in!</p>
-
-                <div class="social-link">
-                    <a href="#" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                    <a href="#" target="_blank"><i class='bx bxl-twitter' ></i></a>
-                    <a href="#" target="_blank"><i class='bx bxl-github' ></i></a>
-                    <a href="#" target="_blank"><i class='bx bxl-facebook'></i></i></a>
-        
-                </div>
-
-            </div>
-
-            <div class="me">
-                <img src="./funmi2.png" alt="" style="width: 80%; height:500px">
-            </div>
-
-            
-        </div>
-
-        <hr class="line" width= 800px>
-
-
-        <div class="imgs">
-            <div class="asset">
-                <img src="./assets/css.png" alt="" style="height: 200px;">
-                <img src="./assets/html.png" alt="" style="height: 200px;">
-                <img src="./assets/java.png" alt="" style="height: 200px;">
-                <img src="./assets/typescript.png" alt="" style="height: 200px;">
-
-            </div>
-            
-            <div class="about">
-                <h2>I specialize in</h2>
-                <div class="course">
-                    <h4>Software Development</h4>
-                    <p>researching, designing, building, and managing computer and application software <br> Applying scientific and technological principles to user needs write code, and ensure software functionality</p>
-                
-                    <ul>
-                        Frontend Development
-                    </ul>
+                    <button class="hire">Contact &rarr; </button>
                 </div>
             </div>
 
         </div>
+    </nav>
 
-        
-        
+    <div class="intro">
+
+        <div class="moi">
+            <h1>HEY! I'm <span class="name">Oluwafunmilayo,<br>Software Engineer</span></h1>
+            <p>Here, you'll get to know about me and what I do. <br>Sure you'll be pleased with what you see, dive in!
+            </p>
+
+            <div class="social">
+                <a href="https://www.linkedin.com/in/oluwafunmilayo-oluyemi-05976ba1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://x.com/Olufunmijoymi99?t=VpWLFqYrgXd65SNXcm0t4Q&s=08" target="_blank"><i
+                        class='bx bxl-twitter'></i></a>
+                <a href="https://github.com/Oluwafunmilayo16" target="_blank"><i class='bx bxl-github'></i></a>
+                <a href="https://www.facebook.com/akinkuolie.f.elizabeth?mibextid=rS40aB7S9Ucbxw6v" target="_blank"><i
+                        class='bx bxl-facebook'></i></i></a>
+
+            </div>
+
+        </div>
+
+        <div class="me">
+            <img src="./funmi2.png" alt="">
+        </div>
 
 
-    </nav> 
+    </div>
+
+    <hr color="blueviolet">
+
+
+    <div class="imgs">
+        <div class="asset">
+            <img src="./assets/css.png" alt="" style="height: 150px;">
+            <img src="./assets/html.png" alt="" style="height: 150px;">
+            <img src="./assets/java.png" alt="" style="height: 150px;">
+            <img src="./assets/typescript.png" alt="" style="height: 150px;">
+
+        </div>
+
+        <div class="about">
+            <h2>I specialize in</h2>
+            <div class="course">
+                <h4>Frontend Development</h4>
+                <p>Researching, designing, building, and managing computer and application software </p>
+                <!-- <p>Applying scientific and technological principles to user needs write code, and ensure software functionality</p> -->
+
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Typescript</li>
+                    <li>ReactJS</li>
+                    <li>API Integration</li>
+                    <li>Hosting</li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+    <hr color="blueviolet">
+
+    <div class="portfolio">
+
+        <div class="port">
+            <h1>Portfolio</h1>
+
+        </div>
+
+
+        <div class="projects">
+
+            <div class="bmi">
+
+                <h3>BMI Calculator <a href="https://github.com/Oluwafunmilayo16/bmi-calculator" target="_blank"><i class='bx bx-link'></i></a></h3>
+                <img src="./assets/calc.JPG" alt="">
+
+            </div>
+            <div class="la2">
+                <h3>Landing Page <a href="https://github.com/Oluwafunmilayo16/landing-page-demo" target="_blank"><i class='bx bx-link'></i></a></h3>
+                <img src="./assets/landingPage2.JPG" alt="">
+
+            </div>
+            <div class="la1">
+                <h3>Design Page <a href="#" target="_blank"><i class='bx bx-link'></i></a></h3>
+                <img src="./assets/landingPage1.JPG" alt="">
+
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr color="blueviolet">
+
+
+    <div class="faq">
+        <div class="faq1">
+            <h5 class="highlight">FAQ</h5>
+            <h1>Frequently Asked <br><span class="highlight">Questions</span></h1>
+            <h3>If you have any other questions, you can contact me by email <a class="email highlight"
+                    href="mailto:olufunmihephzibah@gmail.com">olufunmihephzibah@gmail.com</a></h3>
+        </div>
+
+        <div class="faq2">
+            <details name="" id="">
+                <summary>Do you do web design? </summary>
+                <p>Yes, I specialize in web design services. From conceptualization to development and deployment, I create visually appealing and functional websites tailored to meet your specific needs.</p>
+            </details>
+            <details>
+                <summary>How long does a website take to build?</summary>
+                <p>The duration of website development depends on various factors such as the complexity of the project, the number of features required, and the availability of content. Typically, a simple website can take a few weeks to complete, while more complex projects may take several months.</p>
+            </details>
+            <details>
+                <summary>Will you work on the project in your account or mine?</summary>
+                <p>I believe in transparency and collaboration. I can work directly within your account or set up a shared workspace where we can collaborate seamlessly. The choice ultimately depends on your preferences and the nature of the project.</p>
+            </details>
+            <details>
+                <summary>I'm an agency, what you can do for us?</summary>
+                <p>As an agency, I can provide a range of services to support your projects. This includes web design and development, content creation, graphic design, and digital marketing solutions. </p>
+            </details>
+        </div>
+    </div>
+
+    <div class="contact">
+        <div class="">
+            <div class="join">
+                <img src="funmi1.jpg" class="round" />
+                <h1>Let's build it together</h1>
+            </div>
+            <div class="contact-links">
+                <button><a
+                        href="https://www.linkedin.com/in/oluwafunmilayo-oluyemi-05976ba1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                        target="_blank">My Linkedin</a></button>
+                <button><a href="assets/Oluwafunmilayo Resume.pdf" target="_blank">Download my Resume</a></button>
+            </div>
+        </div>
+
+        <div class="contact-parent">
+            <div class="contact-tilt"></div>
+            <div class="contact-card">
+                <div>
+                    <h2>Try me out, risk free!</h2>
+                    <p>Let's build something great together</p>
+                </div>
+                <button>Contact</button>
+            </div>
+        </div>
+    </div>
+
+    <hr color="blueviolet">
+
+    <footer>
+        <p>Made with &#x1F496; by me</p>
+        <p class="question-mail">Got a question? <a class="email highlight"
+                href="mailto:olufunmihephzibah@gmail.com">olufunmihephzibah@gmail.com</a></p>
+    </footer>
+
+    <script src="portfolio.js"></script>
 </body>
+
 </html>
